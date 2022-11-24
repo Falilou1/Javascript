@@ -1,8 +1,10 @@
 class videotheque { 
         
     constructor(title, realisator, totalDuration, currentViewingDuration, shortDescription){ 
+       
        this.title = title;
-       this.realisator = realisator; this.totalDuration = totalDuration;
+       this.realisator = realisator; 
+       this.totalDuration = totalDuration;
        this.currentViewingDuration = currentViewingDuration; 
        this.shortDescription= shortDescription;
     }
@@ -28,10 +30,10 @@ console.log(Movie6);
 
 let Movies = [];
 Movies = [
-    "Viking", "les feux de l'amour", "Gameofthrones", "Power", "Ozark", "Blacklist"
+    Movie1, Movie2, Movie3, Movie4, Movie5, Movie6
 ];
 console.log(Movies);
-
+/*
 let firstMovie = Movies[0];
 console.log(`Le premier film est ${firstMovie}`);
 let Movie1title = Movie1.title;
@@ -40,6 +42,14 @@ let Movie1totalDuration = Movie1.totalDuration;
 let Movie1currentViewingDuration = Movie1.currentViewingDuration;
 let Movie1shortDescription = Movie1.shortDescription;
 console.log(`Le titre de mon premier film est ${Movie1title}, l'auteur est ${Movie1realisator} et il parle de ${Movie1shortDescription}. Le film dure ${Movie1totalDuration}mns et je suis à ${Movie1currentViewingDuration}mns.`);
-
+*/
 console.log(Movies.length);
 console.log(Movies[3]);
+
+
+for(let Movie of Movies) {
+console.log(Movie.title);
+console.log(Movie.shortDescription);
+}
+
+
