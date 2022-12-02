@@ -1,0 +1,16 @@
+* {
+    text-align: center;
+}
+img {
+   object-fit: cover; 
+   width:100%;
+   aspect-ratio: 10/15;
+   display: flex;
+   
+} 
+#img2{
+    object-fit: cover; 
+    width:50%;
+    aspect-ratio: 10/15;
+    display: flex;
+}
