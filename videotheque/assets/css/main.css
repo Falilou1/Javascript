@@ -10,7 +10,13 @@ img {
 } 
 #img2{
     object-fit: cover; 
-    width:50%;
+    width:100%;
     aspect-ratio: 10/15;
     display: flex;
+   
+    
+}
+iframe {
+    width: 50em;
+    height: 30em;
 }

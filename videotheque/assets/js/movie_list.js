@@ -1,5 +1,5 @@
 
- const urlFetch = "http://localhost:3000/api/movies"
+ const urlFetch = "https://shy-cyan-iguana-slip.cyclic.app/api/movies/"
   const movieFetch = fetch(urlFetch);
   let htmlElements = "";
   let allMoviesViewingDuration = 0;
