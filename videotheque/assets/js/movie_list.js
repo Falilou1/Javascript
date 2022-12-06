@@ -1,5 +1,5 @@
 
- const urlFetch = "http://localhost:3000/api/movies/"
+ const urlFetch = "http://localhost:3000/api/movies"
   const movieFetch = fetch(urlFetch);
   let htmlElements = "";
   let allMoviesViewingDuration = 0;
@@ -31,7 +31,7 @@
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary"><a href="http://127.0.0.1:5500/videotheque/movie_detail.html?id=${movie._id}">View</a></button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+             
                 </div>
                 <small class="text-muted"> ${toHoursAndMinutes(movie.dureeTotale)} mins</small>
               

@@ -17,6 +17,12 @@ img {
     
 }
 iframe {
-    width: 50em;
+    width: 67.2em;
     height: 30em;
+}
+@media screen and (max-width: 1400px) {
+iframe {
+    flex-direction: column-reverse;
+}
+
 }
