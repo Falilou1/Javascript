@@ -2,7 +2,7 @@ const myMovie = new URLSearchParams(window.location.search).get("id");
 console.log(myMovie);
 
 
-const movieFetch2 = fetch(`https://shy-cyan-iguana-slip.cyclic.app/api/movies/${myMovie}`);
+const movieFetch2 = fetch(`http://localhost:3000/api/movies/${myMovie}`);
 
 /*const rechercheId = (movie) => {
 
@@ -50,7 +50,7 @@ movieFetch2
                 
                 <div class="d-flex justify-content-between align-items-center">
                 <small class="text-muted">Durée : ${toHoursAndMinutes(movie.dureeTotale)} mns</small>
-                <small class="text-muted">Durée de visionnage : ${perviewCalculation(movie.currentViewingDuration, movie.totalDuration)} %</small>
+                <small class="text-muted">Durée de visionnage : ${perviewCalculation(movie.dureeDeVisionnage, movie.dureeTotale)} %</small>
                 <button type="button" class="btn btn-sm btn-outline-secondary"><a href="http://127.0.0.1:5500/videotheque/">Retour</a></button>
                 </div>
             </div>

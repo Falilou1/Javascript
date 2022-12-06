@@ -1,5 +1,5 @@
 
- const urlFetch = "https://shy-cyan-iguana-slip.cyclic.app/api/movies/"
+ const urlFetch = "http://localhost:3000/api/movies/"
   const movieFetch = fetch(urlFetch);
   let htmlElements = "";
   let allMoviesViewingDuration = 0;
@@ -40,6 +40,10 @@
             </div>
             </div>
             `;
+            allMoviesViewingDuration += movie.dureeDeVisionnage; 
+   
+            allMoviesDuration += movie.dureeTotale;
+            
   });
   const moviesList = document.getElementById("moviesList");
   moviesList.innerHTML = htmlElements;
